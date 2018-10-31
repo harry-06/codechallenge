@@ -4,6 +4,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import org.singtel.com.sg.objectmodelling.Question1.Bird;
+import org.singtel.com.sg.objectmodelling.Question2.Chicken;
+import org.singtel.com.sg.objectmodelling.Question2.Duck;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -45,6 +47,7 @@ public class AppTest
     public void testApp()
     {
     	questionOne();
+    	questionTwo();
     	
     }
     
@@ -60,5 +63,21 @@ public class AppTest
 	assertEquals("Iamwalking\n" +
             	"Iamflying\n" +
             	"IamSinging",outContent.toString().trim().replace(" ", ""));
+	outContent.reset();
+    }
+    
+    public void questionTwo()
+    {
+  //Question1 testing
+	assertTrue( true );
+	Duck duck = new Duck();
+	duck.makeSound();
+    duck.swim();
+    Chicken chicken =new Chicken();
+    chicken.makeSound();
+	assertEquals("Quack,quack\n" +
+            	"Iamswimming\n" +
+            	"Cluck,cluck",outContent.toString().trim().replace(" ", ""));
+	outContent.reset();
     }
 }
