@@ -6,6 +6,7 @@ import java.io.PrintStream;
 import org.singtel.com.sg.objectmodelling.Question1.Bird;
 import org.singtel.com.sg.objectmodelling.Question2.Chicken;
 import org.singtel.com.sg.objectmodelling.Question2.Duck;
+import org.singtel.com.sg.objectmodelling.Question3.Rooster;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -48,6 +49,7 @@ public class AppTest
     {
     	questionOne();
     	questionTwo();
+    	questionThree();
     	
     }
     
@@ -78,6 +80,18 @@ public class AppTest
 	assertEquals("Quack,quack\n" +
             	"Iamswimming\n" +
             	"Cluck,cluck",outContent.toString().trim().replace(" ", ""));
+	outContent.reset();
+    }
+    
+    public void questionThree()
+    {
+  //Question1 testing
+	assertTrue( true );
+    Rooster rooster = new Rooster();
+    rooster.makeSound();
+	assertEquals("Cock-a-doodle-doo"
+            	
+            	,outContent.toString().trim().replace(" ", ""));
 	outContent.reset();
     }
 }
