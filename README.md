@@ -1,6 +1,6 @@
 # codechallenge
-Singtel
-========
+Singtel Coding Test
+====================
 
 Pre-requisties to build project
 ===============================
