@@ -15,8 +15,8 @@ import org.singtel.com.sg.objectmodelling.Question2.Chicken;
 public class Rooster extends Chicken implements  Soundable{
 	
 	public void makeSound() {
-		System.out.println("Cock-a-doodle-doo");
 		
+		System.out.println("Cock-a-doodle-doo");
 	}
 
 }
