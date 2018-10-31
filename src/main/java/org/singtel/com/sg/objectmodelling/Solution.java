@@ -7,6 +7,8 @@ import org.singtel.com.sg.objectmodelling.Question3.Rooster;
 import org.singtel.com.sg.objectmodelling.Question4.Cat;
 import org.singtel.com.sg.objectmodelling.Question4.Dog;
 import org.singtel.com.sg.objectmodelling.Question4.Parrot;
+import org.singtel.com.sg.objectmodelling.Question5.Clownfish;
+import org.singtel.com.sg.objectmodelling.Question5.Shark;
 
 /**
  * Hello world!
@@ -53,5 +55,25 @@ public class Solution
        
        Parrot parrot4 = new Parrot(new Duck());
        parrot4.getDuck().makeSound();
+       
+       
+       
+     //Question 5
+       System.out.println("Question5 output:");
+       Shark shark = new Shark();
+       shark.setColor();
+       shark.setSize();
+       shark.setEatFish();
+      System.out.println("Size:"+shark.getSize());
+      System.out.println("Color:"+shark.getColor());
+      System.out.println("EatFish:"+shark.isEatFish());
+      
+      Clownfish clownFish = new Clownfish();
+      clownFish.setColor();
+      clownFish.setSize();
+      clownFish.setMakeJokes();
+     System.out.println("Size:"+clownFish.getSize());
+     System.out.println("Color:"+clownFish.getColor());
+     System.out.println("MakeJokes:"+clownFish.isMakeJokes());
     }
 }
